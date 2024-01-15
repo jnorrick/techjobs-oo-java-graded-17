@@ -40,6 +40,18 @@ public class Job {
     }
 
     @Override
+    public String toString() {
+        String dataNotAvailable = "Data not available";
+//        String id = getId() = false ? dataNotAvailable : getId();
+        String name = getName() == "" ? dataNotAvailable : getName();
+        String employer = getEmployer().getValue() == "" ? dataNotAvailable : getEmployer().getValue();
+        String location = getLocation().getValue() == "" ? dataNotAvailable : getLocation().getValue();
+        String position = getPositionType().getValue() == "" ? dataNotAvailable : getPositionType().getValue();
+        String coreCompetency = getCoreCompetency().getValue() == "" ? dataNotAvailable : getCoreCompetency().getValue();
+        String result = String.format("\n" + "ID: %d" + "\n" + "Name: %s" + "\n" + "Employer: %s" + "\n" + "Location: %s" + "\n" + "Position Type: %s" + "\n" + "Core Competency: %s" + "\n", getId(), name, employer, location, position, coreCompetency);
+        return result;
+    }
+    @Override
     public int hashCode() {
         return Objects.hash(id);
     }

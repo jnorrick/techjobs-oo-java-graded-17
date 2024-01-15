@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class JobTest {
-    //TODO: Create your unit tests here
     @Test
     public void testSettingJobId() {
         Job job1 = new Job();
@@ -30,8 +29,28 @@ public class JobTest {
 
     @Test
     public void testJobsForEquality() {
-        Job test_job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         Job test_job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        assertNotEquals(test_job.getId(), test_job2.getId());
+        Job test_job3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertNotEquals(test_job2.getId(), test_job3.getId());
+    }
+
+    @Test
+    public void testToStringStartsAndEndsWithNewLine() {
+        Job test_job4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertTrue(test_job4.toString().startsWith("\n"));
+        assertTrue(test_job4.toString().endsWith("\n"));
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData() {
+        Job test_job5 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertEquals(test_job5.toString(), "\n" + "ID: 4" + "\n" + "Name: Product tester" + "\n" + "Employer: ACME" + "\n" + "Location: Desert" + "\n" + "Position Type: Quality control" + "\n" + "Core Competency: Persistence" + "\n");
+        assertEquals(6, 6);;
+    }
+
+    @Test
+    public void testToStringHandlesEmptyField() {
+        Job test_job6 = new Job("", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertEquals(test_job6.toString(),"\n" + "ID: 3" + "\n" + "Name: Data not available" + "\n" +"Employer: ACME" + "\n" + "Location: Desert" + "\n" + "Position Type: Quality control" + "\n" +"Core Competency: Persistence" + "\n");
     }
 }
