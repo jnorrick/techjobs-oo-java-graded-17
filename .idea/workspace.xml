@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Completed Task 4 Test Jobs">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Completed Task 5 all tests passing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,30 +87,19 @@
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TestTaskTwo">
-    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
+      <module name="techjobs-oo-java17-graded.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.launchcode.techjobs.oo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestTaskFive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -222,7 +210,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.JobTest" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.TestTaskFour" />
       <item itemvalue="Gradle.TestTaskThree" />
       <item itemvalue="Gradle.TestTaskTwo" />
@@ -231,11 +219,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.TestTaskTwo" />
         <item itemvalue="Gradle.TestTaskThree" />
         <item itemvalue="Gradle.TestTaskFour" />
         <item itemvalue="Gradle.TestTaskFive" />
-        <item itemvalue="Gradle.JobTest" />
       </list>
     </recent_temporary>
   </component>
@@ -287,13 +275,22 @@
       <option name="project" value="LOCAL" />
       <updated>1705184537045</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Completed Task 5 all tests passing">
+      <option name="closed" value="true" />
+      <created>1705360347516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705360347516</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed Task 2 tests currently passing" />
     <MESSAGE value="Completed Task 3 Job Class" />
     <MESSAGE value="Completed Task 4 Test Jobs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Task 4 Test Jobs" />
+    <MESSAGE value="Completed Task 5 all tests passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Task 5 all tests passing" />
   </component>
 </project>
